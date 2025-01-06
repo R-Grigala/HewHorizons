@@ -70,6 +70,12 @@ class Customer:
         self.addresses: List['CustomerAddress'] = []
         self.orders: List['Order'] = []
 
+    def add_address(self, address: 'CustomerAddress'):
+        self.addresses.append(address)
+
+    def add_order(self, order: 'Order'):
+        self.orders.append(order)
+
 class CustomerAddress:
     def __init__(self, customer: Customer, address: Address, address_type: str, modified_date: datetime):
         self.customer = customer

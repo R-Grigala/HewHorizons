@@ -4,7 +4,7 @@ import pickle
 from typing import List, Any, Type, TypeVar
 from datetime import datetime
 
-from relationships import *
+from Module7.Task5.class_models.relationships import *
 
 # Type variable for generic class handling
 T = TypeVar('T')
